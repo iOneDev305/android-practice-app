@@ -1,12 +1,10 @@
 package com.lyhorng.practiceapp
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.lyhorng.practiceapp.data.model.GridItem
 import com.lyhorng.practiceapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,20 +14,31 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Initialize View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navView: BottomNavigationView = binding.navView
+        // Set up RecyclerView
+        val recyclerView: RecyclerView = binding.recyclerView // Ensure you have a RecyclerView in activity_main.xml
+        recyclerView.layoutManager = GridLayoutManager(this, 3) // 3 columns
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
+        // Sample data
+        val items = listOf(
+            GridItem(R.drawable.ic_wallet, "Accounts"),
+            GridItem(R.drawable.ic_card, "Cards"),
+            GridItem(R.drawable.ic_wallet, "Deposits"),
+            GridItem(R.drawable.ic_wallet, "Loans"),
+            GridItem(R.drawable.ic_wallet, "Cash-Code"),
+            GridItem(R.drawable.ic_wallet, "Top-Up"),
+            GridItem(R.drawable.ic_wallet, "Loans"),
+            GridItem(R.drawable.ic_wallet, "Cash-Code"),
+            GridItem(R.drawable.ic_wallet, "Top-Up")
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+
+        // Set adapter
+        recyclerView.adapter = GridAdapter(items)
+
+        // Add dividers
+        recyclerView.addItemDecoration(GridDividerItemDecoration(this))
     }
 }
