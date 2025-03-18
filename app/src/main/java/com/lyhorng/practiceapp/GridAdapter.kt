@@ -2,6 +2,7 @@ package com.lyhorng.practiceapp
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import com.lyhorng.practiceapp.data.model.GridItem
+import com.lyhorng.practiceapp.ui.qr.QrCodeActivity
 
 class GridAdapter(private val items: List<GridItem>) :
     RecyclerView.Adapter<GridAdapter.ViewHolder>() {
@@ -34,8 +36,18 @@ class GridAdapter(private val items: List<GridItem>) :
         holder.title.text = item.title
 
         // Set click listener with animation
-        holder.linearLayout.setOnClickListener {
-            animateClick(holder.linearLayout, position)
+//        holder.linearLayout.setOnClickListener {
+//            animateClick(holder.linearLayout, position)
+//        }
+
+        // Set click listener
+        holder.itemView.setOnClickListener {
+            if (item.title == "Cash-Code") {
+                // Start QR Code activity
+                val intent = Intent(holder.itemView.context, QrCodeActivity::class.java)
+                intent.putExtra("item_title", item.title)
+                holder.itemView.context.startActivity(intent)
+            }
         }
     }
 
