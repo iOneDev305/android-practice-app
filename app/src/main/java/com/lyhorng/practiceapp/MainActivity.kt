@@ -1,7 +1,9 @@
 package com.lyhorng.practiceapp
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lyhorng.practiceapp.data.model.GridItem
