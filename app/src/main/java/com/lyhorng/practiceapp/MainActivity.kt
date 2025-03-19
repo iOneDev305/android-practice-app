@@ -32,9 +32,6 @@ class MainActivity : AppCompatActivity() {
             GridItem(R.drawable.ic_wallet, "Loans"),
             GridItem(R.drawable.ic_wallet, "Cash-Code"),
             GridItem(R.drawable.ic_wallet, "Top-Up"),
-            GridItem(R.drawable.ic_wallet, "Loans"),
-            GridItem(R.drawable.ic_wallet, "Cash-Code"),
-            GridItem(R.drawable.ic_wallet, "Top-Up")
         )
 
         // Set adapter

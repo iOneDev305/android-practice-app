@@ -64,4 +64,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.google.zxing:core:3.4.1")
+    implementation("com.github.bumptech.glide:glide:4.13.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.13.0") // This is for Java annotation processing, you may not need it for Kotlin.
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.13.0") // If you use OkHttp (optional)
 }
