@@ -1,13 +1,19 @@
 package com.lyhorng.practiceapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.lyhorng.practiceapp.data.model.GridItem
+import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
 import com.lyhorng.practiceapp.databinding.ActivityMainBinding
-
+import com.lyhorng.practiceapp.ui.demo.DemoActivity
+import com.lyhorng.practiceapp.ui.home.HomeActivity
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,26 +26,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Set up RecyclerView
-        val recyclerView: RecyclerView = binding.recyclerView
-        val recyclerViewCard: RecyclerView = binding.rcCard
-        recyclerView.layoutManager = GridLayoutManager(this, 3) // 3 columns
-
-        // Sample data
-        val items = listOf(
-            GridItem(R.drawable.ic_wallet, "Accounts"),
-            GridItem(R.drawable.ic_card, "Cards"),
-            GridItem(R.drawable.ic_wallet, "Deposits"),
-            GridItem(R.drawable.ic_wallet, "Loans"),
-            GridItem(R.drawable.ic_wallet, "Cash-Code"),
-            GridItem(R.drawable.ic_wallet, "Top-Up"),
-        )
-
-        recyclerView.adapter = GridAdapter(items)
-        recyclerView.addItemDecoration(GridDividerItemDecoration(this))
-
-
-        recyclerViewCard.layoutManager = LinearLayoutManager (this, LinearLayoutManager.HORIZONTAL, false)
-        recyclerViewCard.adapter = CardAdapter()
+        // Home Button
+        binding.home.setOnClickListener {
+            startActivity(Intent(this, DemoActivity::class.java))
+        }
     }
 }

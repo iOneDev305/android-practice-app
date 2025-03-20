@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/home"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:icon="@drawable/ic_home_black_24dp"/>
+
+    <!-- Dialog Button -->
+    <Button
+        android:id="@+id/btn_dialog"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Date Picker Button -->
+    <Button
+        android:id="@+id/btn_date_picker"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Date"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Time Picker Button -->
+    <Button
+        android:id="@+id/btn_time_picker"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Time"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Floating Action Button (FAB) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_card"
+        android:contentDescription="Floating Button"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="@color/md_theme_tertiaryFixedDim"/>
+
+</LinearLayout>

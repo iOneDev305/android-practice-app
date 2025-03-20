@@ -1,4 +1,4 @@
-package com.lyhorng.practiceapp
+package com.lyhorng.practiceapp.ui.home
 
 import android.content.Context
 import android.graphics.Canvas

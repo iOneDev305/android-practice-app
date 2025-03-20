@@ -1,4 +1,4 @@
-package com.lyhorng.practiceapp
+package com.lyhorng.practiceapp.ui.home
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -12,6 +12,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
+import com.lyhorng.practiceapp.R
 import com.lyhorng.practiceapp.data.model.GridItem
 import com.lyhorng.practiceapp.ui.qr.QrCodeActivity
 

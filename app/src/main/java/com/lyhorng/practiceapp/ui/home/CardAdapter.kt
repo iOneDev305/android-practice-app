@@ -1,4 +1,4 @@
-package com.lyhorng.practiceapp
+package com.lyhorng.practiceapp.ui.home
 
 import com.lyhorng.practiceapp.R
 import android.view.LayoutInflater
