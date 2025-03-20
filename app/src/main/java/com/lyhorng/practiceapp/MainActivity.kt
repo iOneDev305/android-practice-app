@@ -1,13 +1,13 @@
 package com.lyhorng.practiceapp
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lyhorng.practiceapp.data.model.GridItem
 import com.lyhorng.practiceapp.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Set up RecyclerView
-        val recyclerView: RecyclerView = binding.recyclerView // Ensure you have a RecyclerView in activity_main.xml
+        val recyclerView: RecyclerView = binding.recyclerView
+        val recyclerViewCard: RecyclerView = binding.rcCard
         recyclerView.layoutManager = GridLayoutManager(this, 3) // 3 columns
 
         // Sample data
@@ -34,10 +35,11 @@ class MainActivity : AppCompatActivity() {
             GridItem(R.drawable.ic_wallet, "Top-Up"),
         )
 
-        // Set adapter
         recyclerView.adapter = GridAdapter(items)
-
-        // Add dividers
         recyclerView.addItemDecoration(GridDividerItemDecoration(this))
+
+
+        recyclerViewCard.layoutManager = LinearLayoutManager (this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerViewCard.adapter = CardAdapter()
     }
 }
