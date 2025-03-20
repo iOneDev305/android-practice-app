@@ -1,34 +1,47 @@
 package com.lyhorng.practiceapp
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.datepicker.MaterialDatePicker
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.timepicker.MaterialTimePicker
-import com.google.android.material.timepicker.TimeFormat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 import com.lyhorng.practiceapp.databinding.ActivityMainBinding
-import com.lyhorng.practiceapp.ui.demo.DemoActivity
-import com.lyhorng.practiceapp.ui.home.HomeActivity
-import java.text.SimpleDateFormat
-import java.util.*
+import com.lyhorng.practiceapp.ui.fragment.Tab1Fragment
+import com.lyhorng.practiceapp.ui.fragment.Tab2Fragment
+import com.lyhorng.practiceapp.ui.fragment.Tab3Fragment
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Initialize View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Home Button
-        binding.home.setOnClickListener {
-            startActivity(Intent(this, DemoActivity::class.java))
+//        val adapter = TabPagerAdapter(supportFragmentManager)
+//        binding.viewPager.adapter = adapter
+//        binding.tabLayout.setupWithViewPager(binding.viewPager)
+    }
+
+    inner class TabPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+        override fun getItem(position: Int): Fragment {
+            return when (position) {
+                0 -> Tab1Fragment()
+                1 -> Tab2Fragment()
+                2 -> Tab3Fragment()
+                else -> throw IllegalStateException("Unexpected position $position")
+            }
+        }
+
+        override fun getCount(): Int = 3
+
+        override fun getPageTitle(position: Int): CharSequence? {
+            return when (position) {
+                0 -> "Tab 1"
+                1 -> "Tab 2"
+                2 -> "Tab 3"
+                else -> null
+            }
         }
     }
 }

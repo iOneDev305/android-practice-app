@@ -62,7 +62,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
+    implementation ("androidx.viewpager:viewpager:1.0.0")
     implementation("com.google.zxing:core:3.4.1")
     implementation("com.github.bumptech.glide:glide:4.13.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.13.0") // This is for Java annotation processing, you may not need it for Kotlin.
