@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentStatePagerAdapter
 import com.lyhorng.practiceapp.databinding.ActivityMainBinding
 import com.lyhorng.practiceapp.ui.fragment.Tab1Fragment
 import com.lyhorng.practiceapp.ui.fragment.Tab2Fragment
@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val adapter = TabPagerAdapter(supportFragmentManager)
-//        binding.viewPager.adapter = adapter
-//        binding.tabLayout.setupWithViewPager(binding.viewPager)
+        val adapter = TabPagerAdapter(supportFragmentManager)
+        binding.viewPager.adapter = adapter
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
     }
 
-    inner class TabPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+    inner class TabPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
         override fun getItem(position: Int): Fragment {
             return when (position) {
                 0 -> Tab1Fragment()
@@ -35,12 +35,12 @@ class MainActivity : AppCompatActivity() {
 
         override fun getCount(): Int = 3
 
-        override fun getPageTitle(position: Int): CharSequence? {
+        override fun getPageTitle(position: Int): CharSequence {
             return when (position) {
                 0 -> "Tab 1"
                 1 -> "Tab 2"
                 2 -> "Tab 3"
-                else -> null
+                else -> ""
             }
         }
     }
