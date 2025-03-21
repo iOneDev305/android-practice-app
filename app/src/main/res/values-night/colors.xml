@@ -142,6 +142,18 @@
     <color name="md_theme_surfaceContainerHigh_highContrast">#262A2E</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#313539</color>
 
+    <color name="app_secondary">#52BAD0</color>
+    <color name="app_secondary_dark">#3099B0</color>
+    <color name="app_primary">#245C81</color>
+    <color name="app_primary_dark">#044566</color>
+    <color name="app_accent">#DE5E57</color>
+    <color name="black">#FF000000</color>
+    <color name="reticle_ripple">#9AFFFFFF</color>
+    <color name="color_light_background">#bac1c3</color>
+    <color name="barcode_reticle_background">#99000000</color>
+    <color name="barcode_reticle_stroke">#40000000</color>
+    <color name="color_bakong">#E21A1A</color>
+
     <color name="dark_blue">#1C2526</color> <!-- Dark blue background -->
     <color name="white">#FFFFFF</color>
 </resources>

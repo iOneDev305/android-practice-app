@@ -1,6 +1,46 @@
 <resources>
-    <string name="app_name">PracticeApp</string>
+<!--    <string name="app_name">PracticeApp</string>-->
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="app_name">ABA Clone</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="accounts">Accounts</string>
+    <string name="cards">Cards</string>
+    <string name="payments">Payments</string>
+    <string name="new_account">New Account</string>
+    <string name="cash_to_atm">Cash to ATM</string>
+    <string name="transfers">Transfers</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="loans">Loans</string>
+    <string name="services">Services</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_pin_to_login">Enter PIN to login</string>
+    <string name="all_accounts_summary">All Accounts Summary</string>
+    <string name="top_up_your_phone_pay_your_bills_like_your_children_s_school_fees_anytime_free_of_charge">Top up your phone, pay your bills like your children\'s school fees, anytime, free of charge.</string>
+    <string name="transfer_money_to_your_fiends_relatives_or_partners_in_couple_of_simple_steps">Transfer money to your fiends, relatives or partners in couple of simple steps.</string>
+    <string name="account_openning">Account Opening</string>
+    <string name="get_loan">Get Loan</string>
+    <string name="quick_transfer">Quick Transfer</string>
+    <string name="create_your_templates_here_to_make_transfer_quicker">Create your templates here to make transfer quicker</string>
+    <string name="quick_payment">Quick Payment</string>
+    <string name="paying_your_bills_with_templates_is_faster">Paying your bills with templates is faster</string>
+    <string name="save_here_aba_accounts_of_your_relatives_friends_or_business_partners_to_whom_you_transfer_funds_frequently">Save here ABA accounts of your relatives, friends or business partners, to whom you transfer funds frequently.</string>
+    <string name="qr">QR</string>
+    <string name="show_this_qr_to_receive_money_from_others">Show this QR to receive money from others.</string>
+    <string name="instruction_to_add_card">Press (+) button above to order a new \n payment card</string>
+    <string name="tab_transactions">TRANSACTIONS</string>
+    <string name="tab_announcements">ANNOUNCEMENTS</string>
+    <string name="notifications">Notifications</string>
+    <string name="favorites">Favorites</string>
 </resources>
