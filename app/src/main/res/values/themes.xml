@@ -2,7 +2,7 @@
     <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
 
         <!-- White status bar with dark icons -->
-        <item name="android:statusBarColor">#6D5C3F</item>
+        <item name="android:statusBarColor">@color/md_theme_primary</item>
 <!--        <item name="android:navigationBarColor"></item>-->
 <!--        <item name="android:windowLightStatusBar">true</item>-->
 

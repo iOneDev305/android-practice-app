@@ -1,5 +1,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#E91E63"/> <!-- Color of the divider -->
-    <size android:height="4dp" /> <!-- Set the height for horizontal dividers -->
-    <!-- You can also set the width for vertical dividers if needed -->
+    <size android:width="4dp" android:height="2dp" />
+    <solid android:color="#F44336" /> <!-- Blue color -->
 </shape>

@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:gravity="center"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="18dp"
-    android:clickable="true"
-    android:focusable="true"
-    android:background="@android:color/transparent"
-    android:foreground="?android:attr/selectableItemBackground">
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:src="@drawable/ic_wallet" />
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_card" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Accounts"
-        android:textAlignment="center" />
+        android:text="Account"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
 </LinearLayout>
