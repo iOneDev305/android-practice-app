@@ -57,4 +57,8 @@
     <style name="CustomAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.ExtraLarge</item>
     </style>
+
+    <style name="Theme.ABAClone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ABAClone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
