@@ -68,4 +68,9 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.13.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.13.0") // This is for Java annotation processing, you may not need it for Kotlin.
     implementation("com.github.bumptech.glide:okhttp3-integration:4.13.0") // If you use OkHttp (optional)
+
+    // Paging 3 dependency
+    implementation ("androidx.paging:paging-runtime:3.1.1") // Use the latest version if possible
+    // For Paging with Room (if you are using Room to store your data)
+    implementation ("androidx.paging:paging-runtime-ktx:3.1.1")
 }
