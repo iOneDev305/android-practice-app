@@ -1,0 +1,52 @@
+<resources>
+    <!--    <string name="app_name">PracticeApp</string>-->
+    <string name="title_home">ទំព័រដើម</string>
+    <string name="title_dashboard">ផ្ទាំងគ្រប់គ្រង</string>
+    <string name="title_notifications">ការជូនដំណឹង</string>
+
+    <string name="app_name">ABA Clone</string>
+    <string name="navigation_drawer_open">បើករបារប្រើប្រាស់</string>
+    <string name="navigation_drawer_close">បិទរបារប្រើប្រាស់</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">ស្លាបព្រិលដ៏អនុគ្រោះ</string>
+    <string name="action_settings">ការកំណត់</string>
+
+    <string name="menu_home">ទំព័រដើម</string>
+    <string name="menu_gallery">រ៉េបប្រតិភូ</string>
+    <string name="menu_slideshow">រូបភាពលេងស្លាយ</string>
+    <string name="accounts">គណនី</string>
+    <string name="cards">កាត</string>
+    <string name="payments">ការទូទាត់</string>
+    <string name="new_account">គណនីថ្មី</string>
+    <string name="cash_to_atm">ប្រាក់ទៅ ATM</string>
+    <string name="transfers">ការផ្ទេរ</string>
+    <string name="scan_qr">ស្កាន QR</string>
+    <string name="loans">ប្រាក់កម្ចី</string>
+    <string name="services">សេវាកម្ម</string>
+    <string name="cancel">បោះបង់</string>
+    <string name="enter_pin_to_login">បញ្ចូល PIN ដើម្បីចូលប្រើ</string>
+    <string name="all_accounts_summary">សេចក្តីសង្ខេបគណនីទាំងអស់</string>
+    <string name="top_up_your_phone_pay_your_bills_like_your_children_s_school_fees_anytime_free_of_charge">បញ្ចូលប្រាក់សម្រាប់ទូរស័ព្ទរបស់អ្នក បង់វិក្កយបត្រដូចជា បង់ថ្លៃសិក្សាសម្រាប់កូនៗរបស់អ្នក ពីរ៉ែម្យ៉ាងពេលណាក៏បានដោយឥតគិតថ្លៃ។</string>
+    <string name="transfer_money_to_your_fiends_relatives_or_partners_in_couple_of_simple_steps">ផ្ទេរប្រាក់ទៅមិត្តភក្តិ សម្ពន្ធករឬដៃគូរបស់អ្នកក្នុងជំហានសាមញ្ញមួយចំនួន។</string>
+    <string name="account_openning">បើកគណនី</string>
+    <string name="get_loan">ទទួលប្រាក់កម្ចី</string>
+    <string name="quick_transfer">ផ្ទេរដោយឆាប់រហ័ស</string>
+    <string name="create_your_templates_here_to_make_transfer_quicker">បង្កើតសេមភ្លុករបស់អ្នកនៅទីនេះ ដើម្បីធ្វើការផ្ទេរឱ្យឆាប់រហ័ស</string>
+    <string name="quick_payment">បង់ប្រាក់ឆាប់</string>
+    <string name="paying_your_bills_with_templates_is_faster">ការបង់វិក្កយបត្រដោយប្រើសេមភ្លុកមានល្បឿនលឿនជាង</string>
+    <string name="save_here_aba_accounts_of_your_relatives_friends_or_business_partners_to_whom_you_transfer_funds_frequently">រក្សាទុកគណនី ABA របស់គ្រួសារមិត្តភក្តិ ឬដៃគូអាជីវកម្មដែលអ្នកផ្ទេរប្រាក់ទៅវិញទៅមកជាញឹកញាប់។</string>
+    <string name="qr">QR</string>
+    <string name="show_this_qr_to_receive_money_from_others">បង្ហាញ QR នេះដើម្បីទទួលប្រាក់ទៅពីអ្នកផ្សេង។</string>
+    <string name="instruction_to_add_card">ចុចប៊ូតុង (+) នៅខាងលើ ដើម្បីបញ្ជាទិញកាតបង់ប្រាក់ថ្មី</string>
+    <string name="tab_transactions">ប្រតិបត្តិការ</string>
+    <string name="tab_announcements">ការប្រកាស</string>
+    <string name="notifications">ការជូនដំណឹង</string>
+    <string name="favorites">ចំណូលចិត្ត</string>
+
+    <string name="home_button">ផ្ទះ</string>
+    <string name="dialog_button">បង្ហាញប្រអប់សន្ទនា</string>
+    <string name="date_picker_button">ជ្រើសកាលបរិច្ឆេទ</string>
+    <string name="time_picker_button">ជ្រើសម៉ោង</string>
+    <string name="fab_content_description">ប៊ូតុងប៉ុនត្រូវ</string>
+</resources>

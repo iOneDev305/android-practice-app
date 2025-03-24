@@ -13,7 +13,7 @@
         style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:text="@string/home_button"
         app:icon="@drawable/ic_home_black_24dp"/>
 
     <!-- Dialog Button -->
@@ -22,7 +22,7 @@
         style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Dialog"
+        android:text="@string/dialog_button"
         android:layout_marginTop="8dp"/>
 
     <!-- Date Picker Button -->
@@ -31,7 +31,7 @@
         style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pick Date"
+        android:text="@string/date_picker_button"
         android:layout_marginTop="8dp"/>
 
     <!-- Time Picker Button -->
@@ -40,7 +40,7 @@
         style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pick Time"
+        android:text="@string/time_picker_button"
         android:layout_marginTop="8dp"/>
 
     <!-- Floating Action Button (FAB) -->
@@ -49,8 +49,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_card"
-        android:contentDescription="Floating Button"
+        android:contentDescription="@string/fab_content_description"
         android:layout_marginTop="16dp"
-        app:backgroundTint="@color/md_theme_tertiaryFixedDim"/>
+        app:backgroundTint="@color/md_theme_primary"/>
 
 </LinearLayout>

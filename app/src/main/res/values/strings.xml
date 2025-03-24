@@ -43,4 +43,10 @@
     <string name="tab_announcements">ANNOUNCEMENTS</string>
     <string name="notifications">Notifications</string>
     <string name="favorites">Favorites</string>
+
+    <string name="home_button">Home</string>
+    <string name="dialog_button">Show Dialog</string>
+    <string name="date_picker_button">Pick Date</string>
+    <string name="time_picker_button">Pick Time</string>
+    <string name="fab_content_description">Floating Button</string>
 </resources>
