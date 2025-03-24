@@ -43,6 +43,16 @@
         android:text="@string/time_picker_button"
         android:layout_marginTop="8dp"/>
 
+    <Button
+        android:id="@+id/switchLanguageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch Language"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
     <!-- Floating Action Button (FAB) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

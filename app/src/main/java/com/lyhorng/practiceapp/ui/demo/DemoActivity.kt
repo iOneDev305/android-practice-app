@@ -11,6 +11,8 @@ import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import com.lyhorng.practiceapp.databinding.ActivityDemoBinding
 import com.lyhorng.practiceapp.R
+import com.lyhorng.practiceapp.common.LanguageUtils
+import com.lyhorng.practiceapp.common.SharedPreferencesHelper
 import com.lyhorng.practiceapp.ui.home.HomeActivity
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -18,18 +20,25 @@ import java.util.Locale
 
 class DemoActivity : AppCompatActivity(){
     private lateinit var binding: ActivityDemoBinding
+    private lateinit var sharedPreferencesHelper: SharedPreferencesHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        sharedPreferencesHelper = SharedPreferencesHelper(this)
         binding = ActivityDemoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val currentLanguage = resources.configuration.locales.get(0).language
 
         binding.home.setOnClickListener{
             startActivity(Intent(this, HomeActivity::class.java))
         }
         binding.btnDialog.setOnClickListener{
             showDialog()
+        }
+        binding.switchLanguageButton.setOnClickListener{
+            val newLanguage = if (currentLanguage == "km") "en" else "km"
+            changeLanguage(newLanguage)
+
         }
         binding.btnDatePicker.setOnClickListener{ showDatePicker() }
         binding.btnTimePicker.setOnClickListener{ showTimePicker() }
@@ -83,4 +92,20 @@ class DemoActivity : AppCompatActivity(){
     }
 
 
+    private fun changeLanguage(languageCode: String) {
+        // Save the new language to SharedPreferences
+        sharedPreferencesHelper.saveLanguage(languageCode)
+
+        // Update the locale
+        LanguageUtils.setLocale(this, languageCode)
+
+        // Recreate the activity to apply the new language
+        recreate()
+    }
+
+    private fun setLanguageFromPreferences() {
+        // Get the saved language preference and apply it
+        val languageCode = sharedPreferencesHelper.getLanguage()
+        LanguageUtils.setLocale(this, languageCode)
+    }
 }
