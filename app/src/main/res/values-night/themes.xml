@@ -42,4 +42,7 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
+    <style name="Widget.NavigationView.NoCorner" parent="Widget.MaterialComponents.NavigationView">
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
 </resources>
