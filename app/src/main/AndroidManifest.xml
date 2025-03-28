@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -27,6 +28,8 @@
         <activity android:name=".ui.home.HomeActivity"/>
         <activity android:name=".ui.demo.DemoActivity"/>
         <activity android:name=".ui.demo.TabActivity"/>
+        <activity android:name=".ui.sidebar.SidebarActivity"/>
+        <activity android:name=".ui.login.LoginActivity"/>
     </application>
 
 </manifest>

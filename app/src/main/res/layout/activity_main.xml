@@ -12,31 +12,28 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Toolbar -->
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/topAppBar"
+        <!-- Toolbar or ActionBar can be placed here -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary" />
 
-            app:navigationIcon="@drawable/ic_ham"
-            app:navigationIconTint="@color/white"/>
-
-        <!-- Main content goes here -->
-        <FrameLayout
-            android:id="@+id/content_frame"
+        <!-- Main content area (can include RecyclerView or any other UI components) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
+
     </LinearLayout>
 
     <!-- Navigation Drawer -->
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/navigation_drawer"
+        android:layout_width="280dp"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/drawer_menu"
-        style="@style/Widget.NavigationView.NoCorner"
-        app:headerLayout="@layout/nav_header"/>
+        android:background="#ffffff"
+        android:paddingTop="56dp"
+        android:scrollbars="none" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
